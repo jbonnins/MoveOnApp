@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab_bg_selector"
+    android:gravity="center_vertical" >
+
+    <!-- CHILD -->
+
+    <CheckBox
+        android:id="@+id/check_favorite_station"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:button="@drawable/star_selector"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/cab_code_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:layout_toLeftOf="@+id/check_favorite_station"
+        android:layout_toStartOf="@+id/check_favorite_station"
+        android:text="@string/cabs"
+        android:textColor="@color/colorTexto_Blanco"
+        android:textSize="@dimen/date_message" />
+
+    <RelativeLayout
+        android:id="@+id/station_code_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cab_code_name"
+        android:paddingTop="@dimen/textattop" >
+
+        <ImageView
+            android:id="@+id/imageaddress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/cabs"
+            android:src="@drawable/taxi" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageaddress"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageaddress"
+            android:layout_toRightOf="@+id/imageaddress"
+            android:text="@string/cabs"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/date_message" />
+
+        <ImageView
+            android:id="@+id/imagetelephone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/address"
+            android:layout_toRightOf="@+id/address"
+            android:contentDescription="@string/telephone"
+            android:src="@drawable/telephone" />
+
+        <TextView
+            android:id="@+id/telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageaddress"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imagetelephone"
+            android:layout_toRightOf="@+id/imagetelephone"
+            android:text="@string/cabs"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/date_message" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/station_code_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/station_code_name2"
+        android:paddingTop="@dimen/textattop" >
+
+        <ImageView
+            android:id="@+id/imagetwitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/cabs"
+            android:src="@drawable/creditos_twitter" />
+
+        <TextView
+            android:id="@+id/twitter_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagetwitter"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imagetwitter"
+            android:layout_toRightOf="@+id/imagetwitter"
+            android:text="@string/cabs"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/date_message" />
+
+        <ImageView
+            android:id="@+id/imagefacebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/twitter_account"
+            android:layout_toRightOf="@+id/twitter_account"
+            android:contentDescription="@string/facebook"
+            android:src="@drawable/creditos_facebook" />
+        
+        <TextView
+            android:id="@+id/facebook_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagetwitter"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/cabs"
+            android:layout_toEndOf="@+id/imagefacebook"
+            android:layout_toRightOf="@+id/imagefacebook"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/date_message" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

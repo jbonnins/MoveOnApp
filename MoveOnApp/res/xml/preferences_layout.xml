@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+/*
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+ */
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <PreferenceCategory 
+       android:title="@string/preferences">
+		
+		<CheckBoxPreference 
+		    android:key="bydefault_options" 
+		    android:summary="@string/preferences_by_default_desc" 
+		    android:title="@string/preferencesByDefault" 
+		    android:disableDependentsState="true" android:defaultValue="true"/>
+   </PreferenceCategory>
+   
+   	<PreferenceCategory 
+	    android:title="@string/preferences_ajustes_basicos">
+
+        <ListPreference 
+            android:key="user_options" 
+            android:summary="@string/preferences_type_of_user_desc" 
+            android:entries="@array/type_of_user" 
+            android:entryValues="@array/entryvalues_list_preference_user" 
+            android:dialogTitle="@string/preferences_type_of_user" 
+            android:negativeButtonText="@string/preferences_cancel" 
+            android:title="@string/preferenceTypeOfUser" 
+            android:dependency="bydefault_options"/>   	
+   	</PreferenceCategory>
+   
+   		<PreferenceCategory 
+	    android:title="@string/preferences_advance_settings">
+        
+        <ListPreference 
+            android:key="meter_options" 
+            android:summary="@string/preferences_Transfer_Distance_desc" 
+            android:entries="@array/pref_transfer_distance" 
+            android:entryValues="@array/entryvalues_transfer_distance" 
+            android:dialogTitle="@string/preferences_Transfer_Distance" 
+            android:negativeButtonText="@string/preferences_cancel" 
+            android:title="@string/preferencesTransferDistance" 
+            android:dependency="bydefault_options"/>   	
+            
+		<ListPreference 
+   		    android:key="route_options" 
+   		    android:summary="@string/preferences_options_for_routes_desc" 
+   		    android:entries="@array/array_routeOptions" 
+   		    android:entryValues="@array/entryvalues_list_routeOptions" 
+   		    android:dialogTitle="@string/preferences_options_for_routes" 
+            android:negativeButtonText="@string/preferences_cancel" 
+   		    android:title="@string/preferencesOptionsForRoutes" 
+   		    android:dependency="bydefault_options" />
+        
+   		   		
+   	</PreferenceCategory>
+   	
+	<PreferenceCategory
+	    android:title="@string/preferences_on_open">
+    
+	    <CheckBoxPreference 
+	        android:key="transfer_options" 
+	        android:title="@string/preferences_transfer" 
+	        android:summary="@string/preferences_transfer_desc" 
+	        android:defaultValue="true"/>
+	    
+	    <CheckBoxPreference 
+	        android:key="show_options" 
+	        android:title="@string/preferences_message" 
+	        android:summary="@string/preferences_message_show" 
+	        android:defaultValue="true"/>
+	    
+	    <EditTextPreference 
+	        android:enabled="false" 
+	        android:selectable="false" 
+	        android:title="@string/language" 
+	        android:shouldDisableView="true" 
+	        android:key="language_options"/>
+	    
+   	</PreferenceCategory>
+   	
+</PreferenceScreen>

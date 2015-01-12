@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<resources>
+<!-- Replace "..." with ellipsis character (…, …;) -->
+<string-array name="array_gettingData">
+<item>Ajustando retrovisores…</item>
+<item>Comprobando las ruedas…</item>
+<item>Limpiando los asientos…</item>
+<item>Limpiando lunas…</item>
+<item>Sala de control, inspectores dentro… ;)</item>
+<item>Revisando nivels de aceite…</item>
+<item>Llenando depósitos…</item>
+<item>Dedos mágicos, cerrando puertas…</item>
+<item>Volando a cabecera de linea…</item>
+<item>Encendiendo motores…</item>
+<item>Sacando inpectores a la calle…</item>
+<item>Activando sistemas\nde seguridad…</item>
+<item>Encendiendo la calefacción…</item>
+<item>Tomando café…</item>
+<item>Apagando el aire acondicionado…</item>
+</string-array>
+<string-array name="array_routeFromTo">
+<item>Desde…</item>
+<item>Hasta…</item>
+<item>Dirección</item>
+</string-array>
+<string-array name="array_routeOptions">
+<item>Más rápida</item>
+<item>Menos transbordos</item>
+<item>Accesible</item>
+</string-array>
+<string-array name="array_timetableOptions">
+<item>Salir ahora</item>
+<item>Salir a</item>
+<item>Llegar a</item>
+</string-array>
+<string-array name="type_of_user">
+<item>USUARIO</item>
+<item>CONDUCTOR</item>
+<item>INSPECTOR</item>
+<item>EN CONDUCCIÖN</item>
+</string-array>
+<string-array name="type_of_favorit">
+<item>Taxis</item>
+<item>Operadors de Taxi</item>
+<item>Líneas</item>
+<item>Estaciones</item>
+<item>Llugares de interés</item>
+<item>Tipos de Transporte</item>
+</string-array>
+<string-array name="type_of_transport">
+<item>TRANSPORTE PÚBLICO</item>
+<item>BUS EMT</item>
+<item>METRO</item>
+<item>BICI PALMA</item>
+<item>TREN SFM</item>
+<item>BUS TIB</item>
+<item>TREN DE SOLLER</item>
+<item>TAXI</item>
+<item>CARRUAJE</item>
+</string-array>
+<string-array name="pref_transfer_distance">
+<item>0</item>
+<item>50</item>
+<item>100</item>
+<item>150</item>
+<item>Iliminado</item>
+</string-array>
+<string-array name="language_options">
+<item>Català</item>
+<item>Anglès</item>
+<item>Castellà</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="entryvalues_list_routeOptions">
+<item>FASTER</item>
+<item>LESSTRANSFER</item>
+<item>ACCESIBLE</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="entryvalues_list_preference_user">
+<item>USER</item>
+<item>DRIVER</item>
+<item>INSPECTOR</item>
+<item>DRIVING</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="entryvalues_transfer_distance">
+<item>0</item>
+<item>50</item>
+<item>100</item>
+<item>150</item>
+<item>-1</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="language_code">
+<item>ca</item>
+<item>en</item>
+<item>es</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="type_of_transport_code">
+<item>PUBLICTRANSPORT</item>
+<item>BUSPALMA</item>
+<item>METROPALMA</item>
+<item>BICIPALMA</item>
+<item>TRENMALLORCA</item>
+<item>BUSINTERURBAMALLORCA</item>
+<item>TRENSOLLER</item>
+<item>TAXIPALMA_OD</item>
+<item>CARRUATGEPALMA_OD</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="mytype_of_favorit">
+<item>CAPS</item>
+<item>CAPS OPERATOR</item>
+<item>LINES</item> 
+<item>STATIONS</item>
+<item>PLACES</item>
+<item>TRANSPORT TYPE</item>
+</string-array>
+</resources>

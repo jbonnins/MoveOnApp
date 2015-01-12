@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupItem"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/retrievedtime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTexto_Blanco"
+        android:paddingBottom="3dp"
+        android:text="@string/retrieved"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTexto_Negro"
+        android:textSize="@dimen/text_15"
+        android:transcriptMode="disabled" />
+    
+	<RelativeLayout
+	    android:id="@+id/RelativeLayoutStation"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/tab_bg_selector" >
+
+	     <!-- CHILD -->
+	
+	   <CheckBox
+	       android:id="@+id/check_favorite_station"
+	       android:layout_width="40dp"
+	       android:layout_height="40dp"
+	       android:layout_alignParentEnd="true"
+	       android:layout_alignParentRight="true"
+	       android:layout_alignParentTop="true"
+	       android:focusable="false"
+	       android:button="@drawable/star_selector" />
+	   
+	   <ImageView
+	      android:id="@+id/pmrimage"
+	      android:layout_width="25dp"
+	      android:layout_height="25dp"
+	      android:contentDescription="@string/pmr"
+	      android:layout_toLeftOf="@+id/check_favorite_station"
+	      android:layout_toStartOf="@+id/check_favorite_station"
+	      android:layout_marginTop="5dp"
+	      android:layout_marginRight="5dp"
+	      android:layout_marginEnd="5dp"
+	      android:visibility = "visible"
+	      android:src="@drawable/wheelchairpqt" />
+	  
+	
+	   <TextView
+	       android:id="@+id/station_code_name"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignParentLeft="true"
+	       android:layout_alignParentStart="true"
+	       android:layout_centerVertical="true"
+	       android:layout_toLeftOf="@+id/pmrimage"
+	       android:layout_toStartOf="@+id/pmrimage"
+	       android:layout_marginStart="5dp"
+	       android:layout_marginLeft="5dp"
+	       android:layout_marginBottom="5dp"
+	       android:text="@string/stations"
+	       android:textColor="@color/colorTexto_Blanco"
+	       android:textSize="@dimen/text_button" />
+		</RelativeLayout>
+	   	 
+	   <RelativeLayout
+	       android:id="@+id/station_code_name2"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_marginStart="3dp" 
+           android:layout_marginLeft = "3dp"
+	       android:layout_marginBottom="5dp"
+	       android:paddingTop="@dimen/textattop" >
+
+	       <TextView
+	           android:id="@+id/station_name"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentStart="true"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentTop="true"
+	       	   android:layout_centerVertical="true"
+	       	   android:layout_toStartOf="@+id/meter_num"
+	       	   android:layout_toLeftOf="@+id/meter_num"
+	           android:text="@string/stations"
+	           android:textColor="@color/colorTexto_Blanco"
+	           android:textSize="@dimen/text_button" />
+
+	       <TextView
+	           android:id="@+id/meter_num"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentEnd="true"
+	           android:layout_alignParentRight="true"
+	           android:layout_marginEnd="10dp" 
+		       android:layout_marginRight="10dp"
+		       android:layout_marginBottom="5dp"      
+	           android:layout_alignTop="@+id/station_name"
+	           android:text="@string/bydefault0"
+	           android:textColor="@color/colorTexto_Blanco"
+	           android:textSize="@dimen/date_message" />
+	
+	</RelativeLayout>
+
+	   <ImageView
+	       android:id="@+id/ImageView01"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:contentDescription="@string/line"
+	       android:src="@drawable/line" />
+	
+	<include
+	    android:id="@+id/item_line_nextbus"
+	    layout="@layout/item_line_nextbus" />
+	
+	<ImageView
+	    android:contentDescription="@string/line"
+	    android:id="@+id/imageView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/line" />	
+	
+	<include
+	    android:id="@+id/retrieved_info"
+	    layout="@layout/retrieved_info" />
+
+	<include android:id="@+id/list_generic"
+         layout="@layout/list_generic"/>
+		
+</LinearLayout>
+    	    

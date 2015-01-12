@@ -1,0 +1,215 @@
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<resources>
+<string name="according_scheduled">According scheduled</string>
+<string name="accuracy">Accuracy</string>
+<string name="action_credits_show">Credits</string>
+<string name="action_favorite_show">Favourites</string>
+<string name="action_home_show">Home</string>
+<string name="action_language_show">Language</string>
+<string name="action_menu_user_show">Move On</string>
+<string name="action_refresh">Refresh</string>
+<string name="action_refresh_show">Refresh</string>
+<string name="action_return">One way / Return</string>
+<string name="action_return_show">One way / Return</string>
+<string name="action_search">Search</string>
+<string name="action_search_show">Search</string>
+<string name="action_select_all">Select all</string>
+<string name="action_settings">Settings</string>
+<string name="action_settings_show">Settings</string>
+<string name="action_type_transport_show">Type of transport</string>
+<string name="action_unselect_all">Unselect all</string>
+<string name="address">Address</string>
+<string name="ago">ago</string>
+<string name="app_name">MoveOn</string>
+<string name="background">Background</string>
+<string name="bike_avalaible">Avalaible bikes</string>
+<string name="bike_line">Virtual Bike Line</string>
+<string name="bike_parking">Parking Bikes avalaible</string>
+<string name="button_ok">OK :)</string>
+<string name="bydefault_options">true</string>
+<string name="bydefault0">==</string>
+<string name="cab">Cab</string>
+<string name="cabOperator">Cabs Operator</string>
+<string name="caboperator">Cab operators</string>
+<string name="cabs">Cabs</string>
+<string name="checked">Checked</string>
+<string name="circle_line">Circle Line</string>
+<string name="close">Close</string>
+<string name="connectivity_error">You don\'t have internet connection!</string>
+<string name="countrylabel">Country</string>
+<string name="credits">About…</string>
+<string name="credits_author">© 2014 Juan José Bonnín Sansó (jbonnins@uoc.edu)</string>
+<string name="credits_citybik">The information about the stations\' state is retrieved using the City Bikes API (http://www.citybik.es/), under the LGPL license</string>
+<string name="credits_collaborate"> You are allowed to download and modify the source code of this app, as well as redistribute it with or without modifications under the same license. You are allowed to colaborate in this project :)</string>
+<string name="credits_emt">The information about the stations\' state is retrieved using the EMT-Palma API (http://www.emtpalma.es/EMTPalma/Front/listadolineas.ct.svr)</string>
+<string name="credits_get_code">Source code</string>
+<string name="credits_license">This application is free/libre software and is distributed under the AGPL v.3 license. The library ActionBarSherlock is used (http://actionbarsherlock.com/, under the Apache v2.0 license). The Library littlefluffylocationlibrary is used (https://code.google.com/p/little-fluffy-location-library/, under the Apache v2.0 licence. The library JGrapht (http://jgrapht.org/, under GNU Lesser General Public License). The whole text of both licenses can be accessed below.</string>
+<string name="credits_visit_app_site">Go to the app web</string>
+<string name="dataBaseLoaded">Database loaded!</string>
+<string name="dateEnd">To :</string>
+<string name="dateini">Initial Date</string>
+<string name="dateIni">From :</string>
+<string name="descIcon">App Icon</string>
+<string name="destiny">Destiny of the line</string>
+<string name="dialog_cancel">Cancel</string>
+<string name="dialog_ok">OK</string>
+<string name="emptyFavoriteList">No favorite data avalaible…</string>
+<string name="emptyList">No data avalaible…</string>
+<string name="error_database">Database connection error</string>
+<string name="error_loadingDB">Error loading database, reopen the application or reinstall</string>
+<string name="error_location_GPS">Error with GPS location</string>
+<string name="error_location_NETWORK">Error with Network location</string>
+<string name="facebook">Facebook</string>
+<string name="favourits">Favorits</string>
+<string name="first">Lines</string> 
+<string name="first_bus">First</string>
+<string name="first_user">Lines</string> 
+<string name="flag">Flag</string>
+<string name="flagimage">Flag</string>
+<string name="force_location">Force Location</string>
+<string name="fourth">Favorites</string> 
+<string name="fourth_user">Favorites</string> 
+<string name="group_setting_edit">Group edit</string>
+<string name="group_setting_remove">Group remove</string>
+<string name="hello_world">Hello world!</string>
+<string name="howiget">How do I get to…</string>
+<string name="inicioLoadingData">Loading data</string>
+<string name="inicioVersionNumber">v 1.0</string>
+<string name="isFavourite">Favorite</string>
+<string name="itinCode">Code</string>
+<string name="itinerary">Itinerary</string>
+<string name="itinName">Name</string>
+<string name="language">Language</string>
+<string name="last_updated">Actualized</string>
+<string name="latitude">Latitude</string>
+<string name="line">Line</string>
+<string name="lineNumber">Number of line</string>
+<string name="lines">Lines</string>
+<string name="listCabs">Cabs</string>
+<string name="listLines">Lines</string>
+<string name="listPlaces">Places</string>
+<string name="listStations">Stations</string>
+<string name="loading">Loading…</string>
+<string name="LoadingData">Loading…</string>
+<string name="location_updated">Location updated</string>
+<string name="Logo">Logo</string>
+<string name="longitude">Longitude</string>
+<string name="map">Map</string>
+<string name="mapsNotImplemented">Maps are not available on v1.0</string>
+<string name="menu_lines">Lines</string>
+<string name="menu_transfer_off">Transfer OFF</string>
+<string name="menu_transfer_on">Transfer ON</string>
+<string name="message">Messages</string>
+<string name="messageHour">hour</string>
+<string name="messageHours">hours</string>
+<string name="messageMinute">minute</string>
+<string name="messageMinutes">minutes</string>
+<string name="more_than">more than</string>
+<string name="moveon_menu">Move On</string>
+<string name="myDatabase">moveOnPalma_db.sqlite</string>
+<string name="myFirstSplash">Mi pantalla splash</string>
+<string name="name_existed">the name is aleady existed, make another</string>
+<string name="nearbystations">Nearby Stations</string>
+<string name="Network_Service">Network Service not available"></string>
+<string name="new_type_edit_title">give it a name</string>
+<string name="next_bus">Next</string>
+<string name="no">No</string>
+<string name="no_changes">Without changes to refresh</string>
+<string name="no_software_to_play">didn\'t find any application can play this item.</string>
+<string name="numVersion">v 1.0</string>
+<string name="place">Place</string>
+<string name="places">Places</string>
+<string name="pmr">Wheelchair facilities</string>
+<string name="populationlabel">Population</string>
+<string name="powered_emt">Powered by EMT</string>
+<string name="poweredCityBik">Powered by CityBik</string>
+<string name="poweredEMT">Powered by EMT</string>
+<string name="preferences">Settings</string>
+<string name="preferences_advance_settings">Advance settings</string>
+<string name="preferences_ajustes_basicos">Basic settings</string>
+<string name="preferences_by_default">Chose your preferences on public tranport</string>
+<string name="preferences_by_default_desc">USER, 0 m, FASTER to change it, just check it!</string>
+<string name="preferences_cancel">Exit</string>
+<string name="preferences_def_val_distance">0</string>
+<string name="preferences_def_val_route">FASTER</string>
+<string name="preferences_def_val_transport">BUSEMT</string>
+<string name="preferences_def_val_user">USER</string>
+<string name="preferences_message">Show preferences on open</string>
+<string name="preferences_message_show">Show preferences every time you come back ;)</string>
+<string name="preferences_on_open">Message to remind</string>
+<string name="preferences_options_for_routes">Chose your preferences on public tranport</string>
+<string name="preferences_options_for_routes_desc">Less Transfer, Faster or Accesible (Select ONE)</string>
+<string name="preferences_transfer">Show Transfer</string>
+<string name="preferences_transfer_desc">Show transfers, you can change on each screen as a submenu</string>
+<string name="preferences_Transfer_Distance">Select distance (meters)</string>
+<string name="preferences_Transfer_Distance_desc">Distance for nearby stations (meters)</string>
+<string name="preferences_type_of_user">Type of User</string>
+<string name="preferences_type_of_user_desc">Select the user you are (select ONE)</string>
+<string name="preferencesByDefault">Default Preferences</string>
+<string name="preferencesOptionsForRoutes">Options for routes</string>
+<string name="preferencesTransferDistance">Distance to station</string>
+<string name="preferenceTypeOfUser">Type of user</string>
+<string name="provider">Provider</string>
+<string name="ranklabel">Rank</string>
+<string name="refresh">Refresh</string>
+<string name="refresh_ongoing">Updating state…</string>
+<string name="refresh_succesful">Stations up to date!</string>
+<string name="refreshFavourite">Refreshing favorites…</string>
+<string name="refreshItinerary">Refreshing lines…</string>
+<string name="refreshMessage">Retrieving messages…</string> 
+<string name="refreshNearStation">Refreshing closest stations…</string>
+<string name="refreshStation">Refreshing stations…</string>
+<string name="retrieved">Retrieved</string>
+<string name="routeOfLine">Route of the line</string>
+<string name="routesNotImplemented">Routes not implemented on v1.0</string>
+<string name="SavingData">Saving…</string>
+<string name="scheduled">According to schedule</string>
+<string name="search">Search</string>
+<string name="second">Stations</string> 
+<string name="second_user">Stations</string> 
+<string name="see_you_later">Do you really want to exit?</string>
+<string name="selected">Selected ::</string>
+<string name="selectlang">Select Language</string>
+<string name="station">Station</string>
+<string name="stations">Stations</string>
+<string name="telephone">Telephone</string>
+<string name="third">Nearby Stations</string> 
+<string name="third_user">Nearby Stations</string> 
+<string name="timestamp">Timestamp</string>
+<string name="title_activity_settings">Settings</string>
+<string name="title_error">Error</string>
+<string name="transfer">Transfer</string>
+<string name="twitter">Twitter</string>
+<string name="type_of_transport">Type of transport</string>
+<string name="unchecked">Unchecked</string>
+<string name="unselected">Unselected ::</string>   
+<string name="up_and_down">open close group</string>
+<string name="view_agpl_license">AGPL v.3 license</string>
+<string name="view_agpl_license_land">AGPL v.3\nlicense</string>
+<string name="view_apache_license">Apache v.2 license</string>
+<string name="view_apache_license_land">Apache v.2\nlicense</string>
+<string name="web">Web</string>
+<string name="welcomeMessage">Checking doors…</string>
+<string name="WelcometoMoveOn">MainActivity</string>
+<string name="yes">Yes</string>
+<string name="search_title">search</string>
+<string name="custom_menu">Custom Menu Not Available</string>
+
+</resources>

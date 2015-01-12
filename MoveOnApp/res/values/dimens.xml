@@ -1,0 +1,46 @@
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="textattop">5dp</dimen>
+    <dimen name="textatleft">10dp</dimen>
+    <dimen name="textatright">5dp</dimen>
+    <dimen name="text_at_bottom">50dp</dimen>
+    <dimen name="text_bottom">40dp</dimen>
+    <dimen name="image_top">20dp</dimen>
+    <dimen name="mensajeInicio">20dp</dimen>
+    <dimen name="land_icon_loading">50dp</dimen>
+    <dimen name="land_text_bottom">18sp</dimen>
+    <dimen name="normal_text_bottom">24sp</dimen>
+    <dimen name="margintransfer">2dip</dimen>
+    <dimen name="text_button">20dip</dimen>
+    <dimen name="date_message">16dip</dimen>
+    <dimen name="desc_message">18dip</dimen>
+    <dimen name="image_big">40dip</dimen>
+    <dimen name="image_medium">30dip</dimen>
+    <dimen name="image_small">20dip</dimen>
+    <dimen name="text_15">15dp</dimen>
+    <dimen name="text_10">10dp</dimen>
+    
+    
+    
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@id/menu_user"
+        android:icon="@drawable/llistes"
+        android:showAsAction="always|withText"
+        android:title="@string/moveon_menu"/>
+    
+    <item 
+        android:id="@id/menu_typetransport" 
+        android:title="@string/type_of_transport" 
+        android:icon="@drawable/type_transport" 
+        android:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@id/menu_settings"
+        android:icon="@drawable/abs__ic_action_settings_holo_dark"
+        android:showAsAction="always"
+        android:title="@string/preferences"/>
+    <item
+        android:id="@id/menu_credits"
+        android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark"
+        android:showAsAction="always"
+        android:title="@string/credits"/>
+    <item 
+        android:id="@id/menu_language" 
+        android:title="@string/language" 
+        android:showAsAction="ifRoom|withText"></item>
+    </menu>

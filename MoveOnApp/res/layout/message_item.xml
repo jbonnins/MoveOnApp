@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<!-- PARENT -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@drawable/new_message"
+    android:padding="4dp" >
+
+    <TextView
+        android:id="@+id/textIni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image_typetransport" 
+        android:layout_toRightOf="@+id/image_typetransport"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:text="@string/dateIni"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorTexto_AzulClaro" />
+    
+        <TextView
+            android:id="@+id/textDateIni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textIni"
+            android:layout_toRightOf="@+id/textIni"
+	        android:paddingLeft="3dip"
+	        android:paddingRight="3dip"
+            android:text="@string/dateini"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/date_message" />
+    
+    <TextView
+        android:id="@+id/textEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textIni"
+        android:paddingTop="2dip"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:layout_toEndOf="@+id/image_typetransport"
+        android:layout_toRightOf="@+id/image_typetransport"
+        android:text="@string/dateEnd"
+        android:textColor="@color/colorTexto_AzulClaro"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDateEnd"
+        android:layout_toEndOf="@+id/image_typetransport"
+        android:layout_toRightOf="@+id/image_typetransport"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:text="@string/credits_author"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTexto_AzulClaro"
+        android:textSize="@dimen/desc_message" />
+
+    <TextView
+        android:id="@+id/textMessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMessage"
+        android:layout_toEndOf="@+id/image_typetransport"
+        android:layout_toRightOf="@+id/image_typetransport"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:paddingTop="3dip"
+        android:text="@string/credits_author"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTexto_Blanco"
+        android:textSize="@dimen/desc_message" />
+    
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMessage1"
+        android:paddingTop="15dip"
+        android:paddingBottom="20dip"
+        android:text="@string/credits_collaborate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTexto_Blanco"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_typetransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textIni"
+        android:contentDescription="@string/type_of_transport"
+        android:src="@drawable/bus" />
+
+    <TextView
+        android:id="@+id/textDateEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textEnd"
+        android:layout_toEndOf="@+id/textEnd"
+        android:layout_toRightOf="@+id/textEnd"
+        android:paddingTop="2dip"
+        android:paddingStart="10dip"
+        android:paddingLeft="10dip"
+        android:text="@string/dateini"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTexto_RojoOscuro"
+        android:textSize="@dimen/date_message" />
+
+</RelativeLayout>

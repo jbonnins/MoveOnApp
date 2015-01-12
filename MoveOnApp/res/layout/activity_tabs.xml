@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_tabs"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/moveonappinicio"
+    android:gravity="center_horizontal"
+    android:padding="4dip" 
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/new_button"
+        android:drawableStart="@drawable/route"
+        android:drawableLeft="@drawable/route"
+        android:singleLine="true"
+        android:text="@string/howiget"
+        android:textColor="@color/colorTexto_Blanco"
+        android:textSize="@dimen/text_button"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_tabs1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:orientation="vertical" >
+
+        <View android:id="@+id/fakeView"
+	       android:layout_width="0dp"
+	       android:layout_height="0dp" 
+	       android:layout_centerInParent="true"/>
+	        
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/fakeView"
+            android:layout_toLeftOf="@+id/fakeView"
+            android:layout_toEndOf="@+id/fakeView"
+            android:layout_toRightOf="@+id/fakeView"
+        	android:background="@drawable/new_button"
+        	android:drawableStart="@drawable/type_transport_button"
+            android:drawableLeft="@drawable/type_transport_button"
+            android:text="@string/lines"
+        	android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/text_button"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toStartOf="@+id/fakeView" 
+            android:layout_toLeftOf="@+id/fakeView"
+            android:layout_toEndOf="@+id/fakeView"
+            android:layout_toRightOf="@+id/fakeView"
+        	android:background="@drawable/new_button"
+        	android:drawableStart="@drawable/nearbystations" 
+            android:drawableLeft="@drawable/nearbystations"
+            android:text="@string/nearbystations"
+        	android:textColor="@color/colorTexto_Blanco"
+	        android:textSize="@dimen/text_button"
+            android:visibility="gone" />
+  
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tabs2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_tabs1"
+        android:orientation="vertical" >
+
+         <View android:id="@+id/fakeView1"
+	       android:layout_width="0dp"
+	       android:layout_height="0dp" 
+	       android:layout_centerInParent="true"/>
+	        
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/fakeView1"
+            android:layout_alignRight="@+id/fakeView1"
+            android:drawableStart="@drawable/poibusmenu"
+            android:drawableLeft="@drawable/poibusmenu"
+         	android:background="@drawable/new_button"
+            android:text="@string/stations"
+        	android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/text_button"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_toEndOf="@+id/fakeView1" 
+            android:layout_toRightOf="@+id/fakeView1"
+            android:drawableStart="@drawable/favorits"
+            android:drawableLeft="@drawable/favorits"
+            android:text="@string/favourits"
+         	android:background="@drawable/new_button"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/text_button"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textList"
+        android:visibility="gone" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/tabsImageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:contentDescription="@string/Logo"
+        android:src="@drawable/moveon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/layout_tabs2"
+        android:text="@string/message"
+        android:visibility="gone"
+        android:textSize="@dimen/text_button"
+        android:textColor="@color/colorTexto_AzulOscuro"/>
+    
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="3dp"
+        android:text="@string/emptyList"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tabsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:singleLine="true"
+        android:text="@string/dataBaseLoaded"
+        android:textColor="@color/colorTexto_Negro"
+        android:textSize="@dimen/text_button"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tabsVersionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tabsMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/numVersion"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTexto_Negro"
+        android:textSize="@dimen/normal_text_bottom"
+        android:visibility="gone" />
+
+</RelativeLayout>

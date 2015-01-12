@@ -1,0 +1,27 @@
+src/com.sanbo.enumerated
+	TypeLanguage
+	TypeTransport
+	TypeUser
+	TypeZone
+	
+src/com.sanbo.database
+	DataStore			comprovat inicialització PublicTransport::no obtenemim listAllTranfer
+					error col_Transfer_id :: utilitzam valor col = 0 :: consulta que utilitza una vista
+	DataHelper			
+	
+src/com.sanbo.datamodel
+	all classes			revisades i afegit nous constructors segons necessitat
+	PublicTransport			pendent funcionalitats abans obtenir activity amb listview
+	
+	
+Añadido menu Tabs GRAN CAGADA	
+
+Solucionado consultas BD, confirmar resto consultas no incluidas en creación de PublicTransport
+
+Solucionat Missatges incidència i idioma on the fly
+
+Afagit TAB amb Home as up habilitat i recordatori fragment...
+
+Començam llistes...
+
+	

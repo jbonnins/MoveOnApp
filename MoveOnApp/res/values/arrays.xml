@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<resources>
+<!-- Replace "..." with ellipsis character (…, …;) -->
+<string-array name="array_gettingData">
+<item>Adjusting mirrors…</item>
+<item>Checking tyres…</item>
+<item>Cleaning seats…</item>
+<item>Cleaning windows…</item>
+<item>Control room, inspectors inside… ;)</item>
+<item>Controling oil levels…</item>
+<item>Filling fuel tanks…</item>
+<item>Flying fingers, closing doors…</item>
+<item>Flying to start of line…</item>
+<item>Lighting engines…</item>
+<item>Placing inspectors on the street ;)</item>
+<item>Plugging security systems…</item>
+<item>Switching on the heating…</item>
+<item>Taking coffee…</item>
+<item>Turning off air conditioning…</item>
+</string-array>
+<string-array name="array_routeFromTo">
+<item>From…</item>
+<item>To…</item>
+<item>Direction</item>
+</string-array>
+<string-array name="array_routeOptions">
+<item>Faster</item>
+<item>Less transfers</item>
+<item>Disabled access</item>
+</string-array>
+<string-array name="array_timetableOptions">
+<item>Depart now</item>
+<item>Depart at</item>
+<item>Arrive at</item>
+</string-array>
+<string-array name="type_of_user">
+<item>USER</item>
+<item>DRIVER</item>
+<item>INSPECTOR</item> 
+<item>DRIVING</item>
+</string-array>
+<string-array name="type_of_favorit">
+<item>Caps</item>
+<item>Caps Operator</item>
+<item>Lines</item> 
+<item>Stations</item>
+<item>Places</item>
+<item>Transport Type</item>
+</string-array>
+<string-array name="type_of_transport">
+<item>PUBLIC TRANSPORT</item>
+<item>BUS EMT</item>
+<item>SUBWAY</item>
+<item>PALMA BIKE</item> 
+<item>TRAIN SFM</item>
+<item>BUS TIB</item>
+<item>TRAIN SOLLER</item>
+<item>TAXI</item>
+<item>CARRIAGE</item>
+</string-array>
+<string-array name="pref_transfer_distance">
+<item>0</item>
+<item>50</item>
+<item>100</item>
+<item>150</item>
+<item>Unlimited</item>
+</string-array>
+<string-array name="language_options">
+<item>Catalan</item>
+<item>English</item>
+<item>Spanish</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="entryvalues_list_routeOptions">
+<item>FASTER</item>
+<item>LESSTRANSFER</item>
+<item>ACCESIBLE</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="entryvalues_list_preference_user">
+<item>USER</item>
+<item>DRIVER</item>
+<item>INSPECTOR</item> 
+<item>DRIVING</item> 
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="entryvalues_transfer_distance">
+<item>0</item>
+<item>50</item>
+<item>100</item>
+<item>150</item>
+<item>-1</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="language_code">
+<item>ca</item>
+<item>en</item>
+<item>es</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="type_of_transport_code">
+<item>PUBLICTRANSPORT</item>
+<item>BUSPALMA</item>
+<item>METROPALMA</item>
+<item>BICIPALMA</item> 
+<item>TRENMALLORCA</item>
+<item>BUSINTERURBAMALLORCA</item>
+<item>TRENSOLLER</item>
+<item>TAXIPALMA_OD</item>
+<item>CARRUATGEPALMA_OD</item>
+</string-array>
+<!--Don't translate this list NEVER -->
+<string-array name="mytype_of_favorit">
+<item>CAPS</item>
+<item>CAPS OPERATOR</item>
+<item>LINES</item> 
+<item>STATIONS</item>
+<item>PLACES</item>
+<item>TRANSPORT TYPE</item>
+</string-array>
+</resources>

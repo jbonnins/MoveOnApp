@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<resources>
+    <color name="colorTexto_Blanco">#ffffffff</color>
+    <color name="colorTexto_Negro">#ff000000</color>
+    <color name="colorTexto_GrisClaro">#ff848484</color>
+    <color name="colorTexto_GrisOscuro">#ff585858</color>
+    <color name="colorTexto_AzulClaro">#ffc5eaf8</color>
+    <color name="colorTexto_AzulOscuro">#ffff0000</color>
+    <color name="colorTexto_RojoClaro">#ffff4444</color>
+    <color name="colorTexto_RojoOscuro">#ffcc0000</color>
+    <color name="colorTexto_NaranjaClaro">#ffffbb33</color>
+    <color name="colorTexto_NaranjaOscuro">#ffff8800</color>
+    <color name="colorTexto_VerdeClaro">#ff99cc00</color>
+    <color name="colorTexto_VerdeOscuro">#ff669900</color>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <item type="color" name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</item>
+    <item type="color" name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</item>
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <item type="color" name="abs__bright_foreground_inverse_holo_dark">@color/abs__bright_foreground_holo_light</item>
+    <item type="color" name="abs__bright_foreground_inverse_holo_light">@color/abs__bright_foreground_holo_dark</item>
+    <color name="abs__holo_blue_light">#ff33b5e5</color>
+    
+    
+</resources>

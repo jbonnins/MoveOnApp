@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+		
+        <ImageView
+	        android:id="@+id/lineimage"
+	        android:layout_width="30dip"
+	        android:layout_height="30dip"
+	        android:src="@drawable/emt1"
+	        android:contentDescription="@string/Logo" />
+       
+        <ImageView
+            android:id="@+id/typeTransport"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/type_of_transport"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/nameLine1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/lineimage" 
+            android:layout_toRightOf="@+id/lineimage"
+            android:layout_toStartOf="@+id/typeTransport"
+            android:layout_toLeftOf="@+id/typeTransport"
+            android:background="@color/colorTexto_Blanco"
+            android:paddingBottom="3dp"
+            android:text="@string/lines"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorTexto_Negro"
+            android:textSize="@dimen/text_button"
+            android:transcriptMode="disabled" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+         android:id="@+id/nameLine2"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_toStartOf="@+id/pmrimage"
+         android:layout_toLeftOf="@+id/pmrimage"
+         android:background="@color/colorTexto_Blanco"
+         android:paddingBottom="3dp"
+         android:text="@string/lines"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="@color/colorTexto_Negro"
+         android:textSize="@dimen/text_15"
+         android:transcriptMode="disabled" />
+
+        <ImageView
+            android:contentDescription="@string/pmr"
+            android:id="@+id/pmrimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/wheelchairpqt" />
+     
+    </RelativeLayout>
+    
+    <include android:id="@+id/list_generic"
+         layout="@layout/list_generic"/>
+    
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    The frame layout is here since we will be showing either
+    the empty view or the list view.
+    -->
+
+    <TextView
+        android:id="@+id/name_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:text="@string/listLines"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorTexto_Blanco"
+        android:transcriptMode="disabled"
+        android:textSize="@dimen/text_button" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <!--
+             Here is the list. Since we are using a ListActivity, we
+             have to call it "@android:id/list" so ListActivity will
+             find it
+        -->
+        
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="false" 
+            android:scrollbarThumbVertical="@drawable/thumbblau">
+        </ListView>
+
+        <!-- Here is the view to show if the list is emtpy -->
+        
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:text="@string/emptyList"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/showmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTexto_AzulClaro"
+            android:text="@string/refresh_ongoing"
+            android:textColor="@color/colorTexto_Negro"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+ 
+</LinearLayout>

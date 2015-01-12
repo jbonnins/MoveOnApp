@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+
+<resources>
+	<!-- Activity Main -->
+    <item name="mainLogoImage" format="boolean" type="id">false</item>
+ 	<item name="mainHelloWorld" format="boolean" type="id">false</item>
+    
+	<!-- Activity Loading -->
+    <item name="loadingLogoImage" format="boolean" type="id">false</item>
+    <item name="loadingMessage" format="boolean" type="id">false</item>
+    <item name="loadingVersionNumber" format="boolean" type="id">false</item>
+    		    
+	<!-- Activity Credits -->
+    <item name="credits_author" format="boolean" type="id">false</item>
+    <item name="credits_license" format="boolean" type="id">false</item>
+    <item name="credits_EMT" format="boolean" type="id">false</item>
+    <item name="credits_CityBik" format="boolean" type="id">false</item> 
+    <item name="credits_collaborate" format="boolean" type="id">false</item>
+    <item name="credits_button_agpl_license" format="boolean" type="id">false</item>
+    <item name="credits_button_apache_license" format="boolean" type="id">false</item>
+    <item name="credits_button_close" format="boolean" type="id">false</item>
+
+    <!-- Activity Tabs -->
+    <item name="tabsLogoImage" format="boolean" type="id">false</item>
+    <item name="tabsMessage" format="boolean" type="id">false</item>
+    <item name="tabsVersionNumber" format="boolean" type="id">false</item>
+    
+    <!-- Activity Tabs Menu-->
+    <item name="menu_user" format="boolean" type="id">false</item>
+    <item name="menu_preferences" format="boolean" type="id">false</item>
+    <item name="menu_credits" format="boolean" type="id">false</item>
+    <item name="menu_language" format="boolean" type="id">false</item>
+    <item name="menu_favorite" format="boolean" type="id">false</item>
+    <item name="menu_typetransport" format="boolean" type="id">false</item>
+    
+
+    <!-- Activity Tabs User Menu -->
+    <item name="menu_refresh" format="boolean" type="id">false</item>   
+    <item name="menu_search" format="boolean" type="id">false</item>
+    <item name="menu_return" format="boolean" type="id">false</item>
+    
+    
+    <!-- Activity Tabs User Menu -->
+    <item type="id" name="pager1"/>
+    <!-- Activity Tabs Itinerary_Line User Menu -->
+    <item type="id" name="itinerary_line"/>
+    <!-- Activity Tabs Stations User Menu -->
+    <item type="id" name="stationslist"/>
+    <!-- Activity Tabs Nearby Stations User Menu -->
+    <item type="id" name="nearbystationlist"/>
+    <!-- Activity Tabs Favorites Types User Menu -->
+    <item type="id" name="favorites_types"/>
+    
+    <!-- Activity Tabs User Menu -->
+    
+    <!-- FirstFragment Itinerary -->
+    <!-- SecondFragment Line -->
+    <!-- ThirdFragment Stations-->
+    <!-- FourthFragment Near Sations -->
+    <item name="list" format="boolean" type="id">false</item>
+
+    <!-- listview -->
+    <item name="ranklabel" format="boolean" type="id">false</item>
+    <item name="rank" format="boolean" type="id">false</item>
+    <item name="countrylabel" format="boolean" type="id">false</item>
+    <item name="country" format="boolean" type="id">false</item>
+    <item name="populationlabel" format="boolean" type="id">false</item>
+    <item name="population" format="boolean" type="id">false</item>
+    <item name="flag" format="boolean" type="id">false</item>
+    
+    <!-- listview Itinerary -->
+    <item name="itineraryimage" format="boolean" type="id">false</item>
+    <item name="itinerarycheckbox" format="boolean" type="id">false</item>
+    <item name="itineraryfavourite" format="boolean" type="id">false</item>
+    <item name="itinerarycode" format="boolean" type="id">false</item>
+    <item name="itineraryname" format="boolean" type="id">false</item>
+    
+    
+    <!-- activity_main -->
+    <!-- EMPTY -->
+    <item name="tabcontent" format="boolean" type="id">false</item>
+    <!-- EMPTY  List -->
+    
+    <item name="empty" format="boolean" type="id">false</item>
+    
+</resources>
+
+
+
+

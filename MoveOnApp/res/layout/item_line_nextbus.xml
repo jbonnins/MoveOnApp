@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+	    android:background="@drawable/tab_bg_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+	        android:id="@+id/RelativeLayout2"
+	        android:layout_toStartOf="@+id/RelativeLayout3"
+	        android:layout_toLeftOf="@+id/RelativeLayout3"
+            android:background="@color/colorTexto_Negro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameLine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@+id/lineimage"
+                android:layout_toRightOf="@+id/lineimage"
+                android:text="@string/line"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorTexto_Blanco"
+                android:textSize="@dimen/text_15"
+                android:transcriptMode="disabled" />
+
+            <TextView
+                android:id="@+id/nameLine2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineimage"
+                android:text="@string/line"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorTexto_Blanco"
+                android:textSize="@dimen/text_15"
+                android:transcriptMode="disabled" />
+
+            <ImageView
+                android:id="@+id/lineimage"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:contentDescription="@string/Logo"
+                android:src="@drawable/emtblack" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTexto_Negro"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/firstbus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/first_bus"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorTexto_Blanco"
+                android:textSize="@dimen/text_15"
+                android:transcriptMode="disabled" />
+
+            <TextView
+                android:id="@+id/secondbus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstbus"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/next_bus"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorTexto_Blanco"
+                android:textSize="@dimen/text_15"
+                android:transcriptMode="disabled" />
+
+        </RelativeLayout>
+    </RelativeLayout>    
+</LinearLayout>

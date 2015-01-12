@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ 
+    <TextView
+        android:id="@+id/credits_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/credits"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/abs__bright_foreground_holo_dark" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/line" />
+
+	<ScrollView 
+	    android:id="@+id/scrollView1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="10dp" >
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/credits_author"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/credits_author" />
+	
+	        <TextView
+	            android:id="@+id/credits_license"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/credits_license" />
+	
+	        <TextView
+	            android:id="@+id/credits_EMT"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/credits_emt" />
+	
+	        <TextView
+	            android:id="@+id/credits_CityBik"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/credits_citybik" />
+	        
+	        <TextView
+	            android:id="@+id/credits_collaborate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/credits_collaborate" />    
+	        
+	        <LinearLayout
+	            android:id="@+id/LinearLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <Button
+	                android:id="@+id/credits_button_visit_web"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical|center_horizontal"
+	                android:text="@string/credits_visit_app_site" />
+	
+	            <Button
+	                android:id="@+id/credits_button_source_code"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:text="@string/credits_get_code" />
+	
+        	</LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/credits_button_agpl_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/view_agpl_license_land" />
+
+                <Button
+                    android:id="@+id/credits_button_apache_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/view_apache_license_land" />
+           
+                <Button
+                    android:id="@+id/credits_button_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minWidth="80dp"
+                    android:text="@string/close" />
+            </LinearLayout>
+        </LinearLayout>
+	</ScrollView>
+</LinearLayout>  

@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * Copyright 2013 Juan José Bonnín Sansó (jbonnins@uoc.edu)
+ *
+ * This file is part of MoveOnApp.
+ *
+ *    MoveOnApp is free software: you can redistribute it and/or modify
+ *    it under the terms of the Affero GNU General Public License version 3
+ *    as published by the Free Software Foundation.
+ *
+ *    MoveOnApp is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    Affero GNU General Public License for more details
+ *    (https://www.gnu.org/licenses/agpl-3.0.html).
+ *    
+ *    All the creations are under sanbo package, which is my short surname. 
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab_bg_selector"
+    android:gravity="center_vertical" >
+
+     <!-- CHILD -->
+
+    <CheckBox
+        android:id="@+id/check_favorite_station"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:button="@drawable/star_selector" />
+
+    <TextView
+        android:id="@+id/station_code_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:layout_toStartOf="@+id/check_favorite_station"
+        android:layout_toLeftOf="@+id/check_favorite_station"
+        android:text="@string/stations"
+        android:textColor="@color/colorTexto_Blanco"
+        android:textSize="@dimen/date_message" />
+
+    <RelativeLayout
+        android:id="@+id/station_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/station_code_name"
+        android:layout_toLeftOf="@+id/check_favorite_station"
+        android:layout_toStartOf="@+id/check_favorite_station"
+        android:paddingTop="@dimen/textattop" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bike_avalaible"
+            android:paddingStart="@dimen/image_medium"
+            android:paddingLeft="@dimen/image_medium"
+            android:paddingEnd="@dimen/textatleft"
+            android:paddingRight="@dimen/textatleft"
+            android:src="@drawable/bicipqt" />
+
+        <TextView
+            android:id="@+id/bike_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/imageView1"
+            android:layout_toRightOf="@id/imageView1"
+            android:text="@string/bydefault0"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/date_message" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/bike_num" 
+            android:layout_toRightOf="@+id/bike_num"
+            android:paddingStart="@dimen/image_medium"
+            android:paddingLeft="@dimen/image_medium"
+            android:paddingEnd="@dimen/textatleft"
+            android:paddingRight="@dimen/textatleft"
+            android:contentDescription="@string/bike_parking"
+            android:src="@drawable/parkingpqt" />
+
+        <TextView
+            android:id="@+id/park_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/imageView2"
+            android:layout_toRightOf="@id/imageView2"
+            android:text="@string/bydefault0"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/date_message" />
+
+        <TextView
+            android:id="@+id/meter_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="@dimen/textatleft"
+            android:paddingLeft="@dimen/textatleft"           
+            android:paddingRight="@dimen/textatleft"           
+            android:text="@string/bydefault0"
+            android:textColor="@color/colorTexto_Blanco"
+            android:textSize="@dimen/date_message" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/imgtransfergroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/station_data"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imgtransfer15"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/transfer"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer14"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toStartOf="@+id/imgtransfer15"
+            android:layout_toLeftOf="@+id/imgtransfer15"
+            android:contentDescription="@string/transfer"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer13"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer14"
+            android:layout_toLeftOf="@+id/imgtransfer14"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer12"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer13"
+            android:layout_toLeftOf="@+id/imgtransfer13"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer11"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer12"
+            android:layout_toLeftOf="@+id/imgtransfer12"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer10"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer11"
+            android:layout_toLeftOf="@+id/imgtransfer11"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer9"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer10"
+            android:layout_toLeftOf="@+id/imgtransfer10"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer8"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer9"
+            android:layout_toLeftOf="@+id/imgtransfer9"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer7"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer8"
+            android:layout_toLeftOf="@+id/imgtransfer8"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer6"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer7"
+            android:layout_toLeftOf="@+id/imgtransfer7"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer5"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer6"
+            android:layout_toLeftOf="@+id/imgtransfer6"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer4"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer5"
+            android:layout_toLeftOf="@+id/imgtransfer5"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer3"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer4"
+            android:layout_toLeftOf="@+id/imgtransfer4"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer2"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer3"
+            android:layout_toLeftOf="@+id/imgtransfer3"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer1"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer2"
+            android:layout_toLeftOf="@+id/imgtransfer2"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imgtransfergroup2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgtransfergroup"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imgtransfer30"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+			android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/transfer"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer29"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toStartOf="@+id/imgtransfer30"
+            android:layout_toLeftOf="@+id/imgtransfer30"
+            android:contentDescription="@string/transfer"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer28"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer29"
+            android:layout_toLeftOf="@+id/imgtransfer29"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer27"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer28"
+            android:layout_toLeftOf="@+id/imgtransfer28"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer26"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer27"
+            android:layout_toLeftOf="@+id/imgtransfer27"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer25"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer26"
+            android:layout_toLeftOf="@+id/imgtransfer26"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer24"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer25"
+            android:layout_toLeftOf="@+id/imgtransfer25"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer23"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer24"
+            android:layout_toLeftOf="@+id/imgtransfer24"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer22"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer23"
+            android:layout_toLeftOf="@+id/imgtransfer23"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer21"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer22"
+            android:layout_toLeftOf="@+id/imgtransfer22"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer20"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer21"
+            android:layout_toLeftOf="@+id/imgtransfer21"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer19"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer20"
+            android:layout_toLeftOf="@+id/imgtransfer20"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer18"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer19"
+            android:layout_toLeftOf="@+id/imgtransfer19"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer17"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer18"
+            android:layout_toLeftOf="@+id/imgtransfer18"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer16"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer17"
+            android:layout_toLeftOf="@+id/imgtransfer17"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+    
+        <RelativeLayout
+        android:id="@+id/imgtransfergroup3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgtransfergroup2"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imgtransfer45"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+			android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/transfer"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer44"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toStartOf="@+id/imgtransfer45"
+            android:layout_toLeftOf="@+id/imgtransfer45"
+            android:contentDescription="@string/transfer"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer43"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer44"
+            android:layout_toLeftOf="@+id/imgtransfer44"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer42"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer43"
+            android:layout_toLeftOf="@+id/imgtransfer43"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer41"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer42"
+            android:layout_toLeftOf="@+id/imgtransfer42"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer40"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer41"
+            android:layout_toLeftOf="@+id/imgtransfer41"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer39"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer40"
+            android:layout_toLeftOf="@+id/imgtransfer40"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer38"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer39"
+            android:layout_toLeftOf="@+id/imgtransfer39"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer37"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer38"
+            android:layout_toLeftOf="@+id/imgtransfer38"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer36"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer37"
+            android:layout_toLeftOf="@+id/imgtransfer37"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer35"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer36"
+            android:layout_toLeftOf="@+id/imgtransfer36"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer34"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer35"
+            android:layout_toLeftOf="@+id/imgtransfer35"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer33"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer34"
+            android:layout_toLeftOf="@+id/imgtransfer34"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer32"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer33"
+            android:layout_toLeftOf="@+id/imgtransfer33"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgtransfer31"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/transfer"
+            android:layout_toStartOf="@+id/imgtransfer32"
+            android:layout_toLeftOf="@+id/imgtransfer32"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/emtpq1"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>
